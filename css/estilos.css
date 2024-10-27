@@ -90,7 +90,7 @@ a{
   padding: 18px 50px;
     text-transform: uppercase; /*opcional si esta en minuscula, pasa a mayuscula :v*/
     letter-spacing: 4px;
-    color: #7afc16;
+    color: #000;
     font-size: 1.2rem;
     font-weight: bold;
     transition:  .5s;
