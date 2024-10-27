@@ -87,7 +87,7 @@ a{
     background: darkgreen;
     position: relative;
   display: inline-block;
-  padding: 20px 50px;
+  padding: 13px 30px;
     text-transform: uppercase; /*opcional si esta en minuscula, pasa a mayuscula :v*/
     letter-spacing: 4px;
     color: #7afc16;
