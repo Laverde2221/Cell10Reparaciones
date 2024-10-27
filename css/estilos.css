@@ -80,40 +80,113 @@ header .textos-header{
     width: 100%;
 }
 
-.btn {
-  position: relative;
-  height: 68px;
-  width: 205px;
-  border-radius: 4px;
-  text-transform: uppercase;
-  background-color: #CCC;
-  color: #000;
-  font-size: 25px;
-  overflow: hidden;
-  transition: all 500ms ease;
-  border: 2px solid #7afc16;
-  margin-bottom: 40px;
-  z-index: 0;
-  font-weight: 700;
-  cursor: pointer;
+
+
+
+a{
+    background: darkgreen;
+    position: relative;
+  display: inline-block;
+  padding: 20px 50px;
+    text-transform: uppercase; /*opcional si esta en minuscula, pasa a mayuscula :v*/
+    letter-spacing: 4px;
+    color: #7afc16;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition:  .5s;
+    overflow: hidden;
+    margin-right: 70px;
 }
 
-.btn::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  margin: auto;
-  background-color: #7afc16;
-  transition: all 500ms ease;
-  z-index: -1;
+a:hover{
+    background-color: #7afc16;
+    color: #050801;
+    box-shadow: 0 0 5px #7afc16,
+                0 0 25px #7afc16,
+                0 0 50px #7afc16,
+                0 0 200px #7afc16;
 }
 
-.btn--3:hover {
-  animation: shadow-pulse 1000ms 1;
-  background-color: #FFF;
-  color: #7afc16;
+
+
+a span{
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: animated1 1s infinite;
+}
+
+@keyframes animated1{
+    0%{
+        left: -100%;
+    }
+    100%{
+        left: 100%;
+    }
+}
+
+a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, fuchsia);
+    animation:  animated2 1s infinite;
+    animation-delay: .25s;
+}
+
+@keyframes animated2{
+    0%{
+        top: -100%;
+    }
+    100%{
+        top: 100%;
+    }
+}
+
+a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: animated3 1s infinite;
+    animation-delay: .5s;
+}
+
+@keyframes animated3{
+    0%{
+        right: -100%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+
+a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 1px;
+    height: 100%;
+     background: linear-gradient(360deg, transparent, fuchsia);
+    animation: animated4 1s infinite;
+    animation-delay: .75s;
+}
+
+@keyframes animated4{
+    0%{
+        bottom: -100%;
+    }
+    100%{
+        bottom: 100%;
+    }
 }
 
 /* About us */
